@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" fill="none" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="imp-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d6470"/>
+      <stop offset="100%" stop-color="#1a8a9a"/>
+    </linearGradient>
+    <linearGradient id="imp-grad-2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2540"/>
+    </linearGradient>
+    <filter id="imp-glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background orbs -->
+  <circle cx="240" cy="200" r="160" fill="#0d6470" opacity="0.05"/>
+  <circle cx="380" cy="100" r="80" fill="#00d4aa" opacity="0.06"/>
+
+  <!-- Globe base -->
+  <circle cx="200" cy="220" r="130" stroke="#0d6470" stroke-width="1.5" stroke-opacity="0.3" fill="#0d6470" fill-opacity="0.04"/>
+  <ellipse cx="200" cy="220" rx="130" ry="40" stroke="#0d6470" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="6 4" fill="none"/>
+  <ellipse cx="200" cy="220" rx="75" ry="130" stroke="#0d6470" stroke-width="1" stroke-opacity="0.2" stroke-dasharray="6 4" fill="none"/>
+  <line x1="70" y1="220" x2="330" y2="220" stroke="#0d6470" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="200" y1="90" x2="200" y2="350" stroke="#0d6470" stroke-width="1" stroke-opacity="0.2"/>
+
+  <!-- Continents (simplified shapes) -->
+  <g fill="#0d6470" opacity="0.25">
+    <ellipse cx="160" cy="190" rx="28" ry="22" transform="rotate(-15 160 190)"/>
+    <ellipse cx="210" cy="230" rx="20" ry="16" transform="rotate(10 210 230)"/>
+    <ellipse cx="240" cy="195" rx="32" ry="18" transform="rotate(-5 240 195)"/>
+    <ellipse cx="155" cy="240" rx="16" ry="12" transform="rotate(20 155 240)"/>
+  </g>
+
+  <!-- Conexion arcs (rutas de importación) -->
+  <path d="M 360 80 Q 300 140 200 180" stroke="#00d4aa" stroke-width="2" fill="none" stroke-dasharray="8 5" opacity="0.7"/>
+  <path d="M 80 120 Q 140 160 200 200" stroke="#0d6470" stroke-width="1.5" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+  <path d="M 400 200 Q 320 200 240 210" stroke="#1a8a9a" stroke-width="1.5" fill="none" stroke-dasharray="6 4" opacity="0.5"/>
+
+  <!-- Avión / flecha de importación -->
+  <g transform="translate(310, 100) rotate(-35)" filter="url(#imp-glow)">
+    <path d="M0 0 L-12 6 L-2 0 L-12 -6 Z" fill="#00d4aa"/>
+    <line x1="-12" y1="0" x2="-24" y2="0" stroke="#00d4aa" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-16" y1="0" x2="-20" y2="-5" stroke="#00d4aa" stroke-width="1" stroke-linecap="round"/>
+    <line x1="-16" y1="0" x2="-20" y2="5" stroke="#00d4aa" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- Nodo origen (remoto) -->
+  <circle cx="368" cy="76" r="10" fill="#0d6470" stroke="#00d4aa" stroke-width="1.5" filter="url(#imp-glow)"/>
+  <circle cx="368" cy="76" r="4" fill="#00d4aa"/>
+
+  <!-- Caja / paquete (destino) -->
+  <g transform="translate(130, 290)">
+    <rect width="80" height="60" rx="6" fill="url(#imp-grad-2)" stroke="#0d6470" stroke-width="1.5"/>
+    <line x1="0" y1="20" x2="80" y2="20" stroke="#0d6470" stroke-width="1" stroke-opacity="0.5"/>
+    <line x1="40" y1="0" x2="40" y2="20" stroke="#0d6470" stroke-width="1" stroke-opacity="0.5"/>
+    <!-- Chip/circuit on box -->
+    <rect x="14" y="30" width="22" height="18" rx="3" fill="#0d6470" opacity="0.5" stroke="#1a8a9a" stroke-width="1"/>
+    <circle cx="25" cy="39" r="4" fill="#00d4aa" opacity="0.5"/>
+    <line x1="14" y1="35" x2="10" y2="35" stroke="#1a8a9a" stroke-width="1"/>
+    <line x1="14" y1="40" x2="10" y2="40" stroke="#1a8a9a" stroke-width="1"/>
+    <line x1="36" y1="35" x2="40" y2="35" stroke="#1a8a9a" stroke-width="1"/>
+    <line x1="36" y1="40" x2="40" y2="40" stroke="#1a8a9a" stroke-width="1"/>
+    <!-- Server rack icon -->
+    <rect x="48" y="30" width="20" height="6" rx="2" fill="#1a8a9a" opacity="0.6"/>
+    <rect x="48" y="38" width="20" height="6" rx="2" fill="#0d6470" opacity="0.6"/>
+    <rect x="48" y="46" width="20" height="6" rx="2" fill="#1a8a9a" opacity="0.4"/>
+    <circle cx="66" cy="33" r="1.5" fill="#00d4aa"/>
+    <circle cx="66" cy="41" r="1.5" fill="#00d4aa" opacity="0.6"/>
+  </g>
+
+  <!-- Badge "IMPORTADO" -->
+  <g transform="translate(320, 280)">
+    <rect width="110" height="34" rx="8" fill="url(#imp-grad-1)" opacity="0.15" stroke="#0d6470" stroke-width="1.5"/>
+    <text x="12" y="15" font-family="Inter, sans-serif" font-size="8" fill="#0d6470" font-weight="700" letter-spacing="1">TECNOLOGIA</text>
+    <text x="12" y="26" font-family="Inter, sans-serif" font-size="8" fill="#00d4aa" font-weight="600">Internacional</text>
+  </g>
+
+  <!-- Puntos de conexión flotantes -->
+  <circle cx="90" cy="120" r="5" fill="#1a8a9a" opacity="0.6"/>
+  <circle cx="90" cy="120" r="10" stroke="#1a8a9a" stroke-width="1" fill="none" opacity="0.3"/>
+  <circle cx="400" cy="200" r="4" fill="#0d6470" opacity="0.5"/>
+  <circle cx="400" cy="200" r="9" stroke="#0d6470" stroke-width="1" fill="none" opacity="0.25"/>
+
+  <!-- Etiqueta destino: Perú -->
+  <circle cx="185" cy="215" r="6" fill="#0d6470" filter="url(#imp-glow)"/>
+  <circle cx="185" cy="215" r="3" fill="#00d4aa"/>
+  <line x1="185" y1="209" x2="185" y2="185" stroke="#00d4aa" stroke-width="1" stroke-dasharray="3 2"/>
+  <rect x="158" y="172" width="54" height="18" rx="5" fill="#0a1628" stroke="#00d4aa" stroke-width="1"/>
+  <text x="185" y="184" font-family="Inter, sans-serif" font-size="9" fill="#00d4aa" font-weight="700" text-anchor="middle">Perú</text>
+</svg>

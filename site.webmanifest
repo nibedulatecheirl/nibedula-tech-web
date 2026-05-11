@@ -1,0 +1,27 @@
+{
+  "name": "NIBEDULA TECH E.I.R.L.",
+  "short_name": "NIBEDULA",
+  "description": "Desarrollo de software a medida, automatización e integración de sistemas",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#07111e",
+  "theme_color": "#0d6470",
+  "lang": "es-PE",
+  "dir": "ltr",
+  "categories": ["technology", "business", "productivity"],
+  "icons": [
+    {
+      "src": "assets/img/logo/logo_nibedula_circulo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/logo/logo_nibedula_circulo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

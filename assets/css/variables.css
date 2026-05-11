@@ -1,0 +1,136 @@
+/* ============================================================
+   NIBEDULA TECH — Design Tokens
+   Todas las variables CSS del proyecto. Modificar aquí impacta
+   de forma global en toda la web.
+============================================================ */
+
+:root {
+
+  /* --- Colores de marca --- */
+  --color-primary:       #0d6470;
+  --color-primary-light: #1a8a9a;
+  --color-primary-dark:  #094a54;
+  --color-accent:        #00d4aa;
+  --color-accent-dark:   #00a882;
+
+  /* --- Superficies oscuras (hero, footer, secciones dark) --- */
+  --color-dark:          #07111e;
+  --color-dark-2:        #0a1628;
+  --color-dark-3:        #0d2040;
+  --color-dark-border:   #1a3050;
+
+  /* --- Texto --- */
+  --color-text:          #1a2332;
+  --color-text-muted:    #5a6a7e;
+  --color-text-light:    #8a9bb0;
+  --color-text-inverse:  #e8f4f6;
+
+  /* --- Superficies claras --- */
+  --color-white:         #ffffff;
+  --color-surface:       #f8fafb;
+  --color-surface-2:     #f0f4f8;
+  --color-border:        #e2e8f0;
+  --color-border-subtle: #edf2f7;
+
+  /* --- Estados --- */
+  --color-success:       #28c840;
+  --color-warning:       #febc2e;
+  --color-error:         #dc5c5c;
+  --color-signal:        #f59e0b;
+  --color-electric:      #4f8cff;
+
+  /* --- Tipografía --- */
+  --font-body:    'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+  /* --- Escala de tamaños de texto --- */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  1.875rem;   /* 30px */
+  --text-4xl:  2.25rem;    /* 36px */
+  --text-5xl:  clamp(2.5rem, 5vw, 3.5rem);
+  --text-6xl:  clamp(3rem, 6vw, 4.5rem);
+
+  /* --- Pesos tipográficos --- */
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-extrabold: 800;
+
+  /* --- Line height --- */
+  --leading-tight:  1.2;
+  --leading-snug:   1.35;
+  --leading-normal: 1.6;
+  --leading-relaxed:1.75;
+
+  /* --- Espaciado --- */
+  --space-1:  0.25rem;   /* 4px  */
+  --space-2:  0.5rem;    /* 8px  */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+  --space-32: 8rem;      /* 128px */
+
+  /* --- Border radius --- */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-2xl:  32px;
+  --radius-full: 9999px;
+
+  /* --- Sombras --- */
+  --shadow-sm:      0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md:      0 4px 12px rgba(0,0,0,0.09), 0 2px 6px rgba(0,0,0,0.06);
+  --shadow-lg:      0 8px 24px rgba(0,0,0,0.11), 0 4px 12px rgba(0,0,0,0.07);
+  --shadow-xl:      0 16px 40px rgba(0,0,0,0.14);
+  --shadow-primary: 0 8px 32px rgba(13,100,112,0.28);
+  --shadow-accent:  0 8px 28px rgba(0,212,170,0.22);
+  --shadow-card:    0 2px 8px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.04);
+
+  /* --- Transiciones --- */
+  --transition-fast: 140ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 240ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 380ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* --- Easing curves (animate) --- */
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-expo:  cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* --- Z-index --- */
+  --z-below:    -1;
+  --z-base:      0;
+  --z-raised:   10;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+
+  /* --- Layout --- */
+  --container-max:     1200px;
+  --container-padding: clamp(1rem, 4vw, 2rem);
+  --navbar-height:     72px;
+  --section-py:        clamp(4rem, 8vw, 6rem);
+
+  /* --- Gradientes de marca --- */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  --gradient-dark:    linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-3) 100%);
+  --gradient-accent:  linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary-light) 100%);
+  --gradient-hero:    radial-gradient(ellipse at 70% 40%, rgba(13,100,112,0.18) 0%, transparent 60%),
+                      radial-gradient(ellipse at 20% 80%, rgba(0,212,170,0.08) 0%, transparent 50%),
+                      linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark-2) 100%);
+}
